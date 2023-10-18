@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "testing-app-u"
+client_id = "4e48af564f05716a96f0cb4f68c8e917"
+application_url = "https://annual-forgot-vb-advanced.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://annual-forgot-vb-advanced.trycloudflare.com/auth/callback",
+  "https://annual-forgot-vb-advanced.trycloudflare.com/auth/shopify/callback",
+  "https://annual-forgot-vb-advanced.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "testing-store-u.myshopify.com"
